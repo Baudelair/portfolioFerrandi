@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- main css -->
+        <link rel="stylesheet" href="../css/style.css">
+        <style>
+            p {
+              text-align:justify;
+            }
+            h2{
+                text-align:center;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <h2>Protocoles pour les objets connectés</h2>
+
+        <h3>Contexte</h3>
+        <p>
+            Durant trois séances de travaux pratiques, nous avons pu aborder différents aspects de la modulation et démodulation radio. Ce rapport 
+            est un compte-rendu étape par étape du travail que nous avons réalisé durant ces trois séances de TP en binôme. Il est divisé en trois 
+            parties, la première étant une approche mathématique de la démodulation fréquentielle d’un signal, la deuxième est une approche logicielle 
+            (avec gnu radio) de la démodulation fréquentielle d’un signal et finalement la dernière est une approche logicielle (avec gnu radio) de la 
+            démodulation d’amplitude d’un signal en temps réel.
+            
+        </p>
+        <h3>Ma fonction</h3>
+        <p>
+            Venant d'une spécialisation en Systèmes Communicants en 4e année et que mon binôme Théo s'est formé en informatique, j'ai eu l'occasion de lui 
+            expliquer les bases des télécomes comme les Transformée de Fourrier et la modulation. Ainsi, nous avons pu partager nos connaissances tout en s'aidant 
+            mutuellement au cours des différentes séances. 
+        </p>
+        <h3>Résolution du problème</h3>
+        <p>
+            Dans un premier temps, nous avons démontrer qu'il était possible de démoduler le signal de façon théorique mais qui se passe dans l'USRP (Universal Software Radio Peripheral).
+            Ensuite, nous avons réussi à écouter plusieurs radios FM grâce à l'USRP et GNU-Radio et pour finir l'écoute d'une émission AM que l'on suppose venir 
+            d'un aéroport.
+        </p>
+        <h3>Compétences mobilisées</h3>
+        <p>
+            Nous nous sommes replongés dans les mathématiques et la théorie une dernière fois ce qui nous a montré notre compétences à revenir dans ce domaine
+            facilement. De plus, avec l'écriture de ce rapport, nous avons pu clarifier plus précisement certain sujet en lien avec la télécommunication comme 
+            la différence entre AM et FM ou le fait d'avoir un composant pour écouter différents types d'onde, dans notre cas l'USRP.
+        </p>
+        <h3>Résumé</h3>
+        <p> 
+            On a été amené à refléchir sur la multiplication des systèmes de traitements de signal dans le domaine de l'IoT notamment les téléphones. 
+            Pour chaque protocoles, il y a un système complet et différents sur l'objet en question. On se retrouve donc avec une antenne et sa puce pour le Bluetooth,
+            la même chose pour le Wifi et ainsi de suite. On a pu ainsi démontrer grâce à la démodulation FM que l'on pouvait simplifier cette multiplication de composant
+            par un seul.
+        </p>
+        <h3>Annexe</h3>
+        <iframe src="../pdfContent/fm-am.pdf" width="100%" height="500px">
+        </iframe>
+    </body>
+</html>

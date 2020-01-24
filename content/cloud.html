@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- main css -->
+        <link rel="stylesheet" href="../css/style.css">
+        <style>
+            p {
+              text-align:justify;
+            }
+            h2{
+                text-align:center;
+            }
+            ul.listCloud{
+                margin-left: 1% !important;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <h2>Cloud Computing: Adaptability and Autonomic Management</h2>
+        <p>
+            Ce rapport se compose de deux parties, la première portant sur les conteneurs et les machines virtuelles de 
+            façon théorique. On y démontre les avantages et les inconvénients de chacun tout en détaillant leur fonctionnement. 
+            Ensuite, vient l’approche pratique, où l’on justifie les dires de la première partie. 
+            <br>
+            En effet, les conteneurs sont un meilleur choix lorsque la plus grande priorité est de maximiser le nombre 
+            d'applications à exécuter sur un nombre minimal de serveurs. Contrairement aux machines virtuelles qui sont 
+            un meilleur choix pour exécuter des applications qui nécessitent toutes les ressources et fonctionnalités du 
+            système d'exploitation lorsque vous devez exécuter plusieurs applications sur des serveurs ou que vous avez une 
+            grande variété de systèmes d'exploitation à gérer.
+        </p>
+        <h3>Contexte</h3>
+        <p>
+            Durant ces séances de TP, nous avons validé ces compétences :
+
+            <ul class="listCloud">
+                <li>Objectif 1 : reconnaître les différences fondamentales entre les types d'architectures d'hyperviseurs (type 1/type 2).</li>
+                <li>Objectif 2 : Reconnaître les différences fondamentales entre les deux principaux types d'hôtes de virtualisation, à savoir les machines virtuelles (VM) et les conteneurs (CT).</li>
+                <li>Objectif 3 : évaluer les deux différents modes de connexion au réseau pour les VM et les CT (c'est-à-dire les modes NAT et Bridge).</li>
+                <li>Objectif 4 : Exploiter le provisionnement des VM VirtualBox, en mode NAT, et effectuer les configurations appropriées pour que les VM puissent accéder et être accessibles par l'internet</li>
+                <li>Objectif 5 : Assurer l'approvisionnement des conteneurs Docker et effectuer les configurations appropriées pour que les conteneurs puissent accéder et être accessibles par l'Internet</li>
+                <li>Objectif 6 : Assurer un approvisionnement adéquat des VM avec OpenStack et gérer la connectivité de réseau </li>
+                <li>Objectif 7 : Tester et évaluer les opérations de gestion prises en charge sur les hôtes de virtualisation (par exemple, instantané, restauration, sauvegarde, redimensionnement).</li>
+                <li>Objectif 8 : utiliser l'API OpenStack afin d'automatiser les opérations décrites dans les objectifs 4, 5, 6 et 7.</li>
+                <li>Objectif 9 : Mettre en œuvre un outil d'orchestration simple afin de fournir une application Web à deux niveaux.</li>
+                <li>Objectif 10 : Constituer une topologie réseau spécifique sur OpenStack</li>
+                <li>Objectif 11 : Configurer et déployer cette topologie de réseau</li>
+                <li>Objectif 1 : Lire et assimiler les différentes phases qui constituent le processus de provisionnement des applications d'utilisateur final dans le nuage.</li>
+                <li>Objectif 2 : Mettre en place un tel processus en utilisant un exemple d'application JEE sur la plateforme Google Cloud, Cloud Foundry et Jelastic. Différentes approches et outils seront utilisés pour chacun des PaaS mentionnés précédemment (par exemple, par le biais d'un plugin, d'une CLI et du Web).</li>
+                <li>Objectif 3 : Apprendre à créer une application en nuage plus complexe, et les concepts/principes d'architecture d'application dont vous aurez besoin pour réussir.</li>
+                <li>Objectif 4 : Mettre en œuvre les leçons tirées de l'objectif 3 pour concevoir et développer une application MVC simple avec accès à une base de données, sur un PaaS. </li>
+                <li>Objectif 5 : Concevoir et développer votre propre PaaS embryonnaire en utilisant des conteneurs LXC sur l'infrastructure Proxmox et y faire migrer vos applications de génération et de gestion de ressources.</li>
+            </ul>
+        </p>
+        <h3>Ma fonction</h3>
+        <p>
+            J'ai travaillé en binôme avec Franck où nous nous sommes répartis les tâches dans un premier temps au niveau de la rédaction 
+            de la partie théorique. Puis dans la partie pratique, j'ai été le manipulateur et Franck le rédacteur. Nous avons inversé les 
+            tâches plusieurs fois afin de ne pas laisser la partie fastidieuse d'écriture à une seule personne.
+        </p>
+        <h3>Résolution du problème</h3>
+        <p>
+           Ces séances de TP ont rencontré de nombreux problèmes au vus de la compléxité d'installation. Néanmoins, en essayant de les résoudres, 
+           nous avons découvert des particularités du Cloud que nous n'aurions pas vu dans la séance de TP classique. On a aussi pu appréhender 
+           la complexité des VMs et des conteuneurs. 
+        </p>
+        <h3>Compétences mobilisées</h3>
+        <p>
+           J'ai ainsi pu découvrir l'étendu des possibilités des VMs et des conteuneurs. Cette formation m'a beaucoup plu grâce à la partie réseau qui y été liée. 
+           
+        </p>
+        <h3>Résumé</h3>
+        <p> 
+            Ces travaux pratiques nous ont permis d’appréhender les technologies du cloud. Dans une première approche théorique nous avons étudié deux grands types de container de virtualisation (VM et CT), 
+            différences entre les types de container, types d’hyperviseurs et les principaux modes de connexion au réseau d’un container de virtualisation.
+            <br>
+            Dans la partie pratique, nous nous sommes penchés dans un premier temps sur les technologies de virtualisation, leurs différences entre celles-ci et les différentes catégories dans lesquelles 
+            elles appartiennent (machines virtuelles, conteneurs légers…). Ensuite, nous avons configuré des machines virtuelles à l’aide de VirtualBox puis nous avons vérifié des conjectures en relation 
+            avec la connectivité réseau notamment vers l’extérieur. (connection à internet).
+            <br>
+            Dans la deuxième partie, nous avons cherché à réaliser une architecture avec plusieurs VMs pour faire une calculatrice. Cette exemple basique nous a montré l’étendue des possibilités que 
+            peut avoir OpenStack, mais aussi l’intérêt des machines virtuels. Enfin, malgré des problèmes logiciels rencontrés, nous avons entrevue des plateformes d’hébergements cloud utilisés aujourd’hui 
+            dans les entreprises comme Hidora ou Cloud Foundry.
+
+        </p>
+        <h3>Annexe</h3>
+        <iframe src="../pdfContent/cloud.pdf" width="100%" height="500px">
+        </iframe>
+    </body>
+</html>
